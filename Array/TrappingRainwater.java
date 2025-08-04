@@ -9,7 +9,7 @@ public class TrappingRainwater {
             leftMax[i] = Math.max(height[i] , leftMax[i-1]);
         }
 
-        // rightMax boundaray
+        // rightMax bounday
         int[] rightMax = new int[n];
         rightMax[n-1] = height[n-1];
         for(int i = n-2; i>=0; i--){
