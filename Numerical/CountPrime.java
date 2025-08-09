@@ -4,7 +4,7 @@ import java.util.*;
 public class CountPrime {
 
     public static int CountPrime(int n){
-        if(n == 0 || n == 1){
+        if(n <=1){
             return 0;
         }
         int count = 0;
@@ -13,6 +13,7 @@ public class CountPrime {
             for(int j = 2; j<=i/2; j++){
                 if(i%j == 0){
                     b = false;
+                    break;
                 }
             }
             if(b == true){
